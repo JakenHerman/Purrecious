@@ -5,3 +5,6 @@ This will be a photoviewing platform that will allow instagram users to tag phot
 
 
 Needs refresh functionality
+
+EDIT: 
+Standard Res photos show old pictures, not current thumbs
