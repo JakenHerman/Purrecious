@@ -64,6 +64,12 @@
     NSString *urlString = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/cats/media/recent?access_token=%@", self.accessToken];
      NSString *urlString2 = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/tags/Purrecious/media/recent?access_token=%@", self.accessToken];
     
+    
+    //urlString2 will allow for another hashtag to be searched. You could continue copying/pasting these seperate tags,
+    //however, code will grow longer and longer. Create an algorithm that you can use that will make the code short
+    // and effecient. 
+    
+    
     NSURL *url = [[NSURL alloc]initWithString:urlString];
     NSURL *url2 = [[NSURL alloc]initWithString:urlString2];
 
