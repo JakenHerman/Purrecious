@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F283AD09D384374BD33DA72 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48672C0DF09843E0BC986960 /* libPods.a */; };
+		F31CA876192ECC1600B4C9C3 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F31CA875192ECC1600B4C9C3 /* PhotoController.m */; };
+		F31CA879192ED0C300B4C9C3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F31CA878192ED0C300B4C9C3 /* DetailViewController.m */; };
 		F34ACF84192DACF60023E98C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34ACF83192DACF60023E98C /* Foundation.framework */; };
 		F34ACF86192DACF60023E98C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34ACF85192DACF60023E98C /* CoreGraphics.framework */; };
 		F34ACF88192DACF60023E98C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34ACF87192DACF60023E98C /* UIKit.framework */; };
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48672C0DF09843E0BC986960 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19E9B512B09453081CD28B6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Purrecious/Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F31CA873192EB38100B4C9C3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = Purrecious/Podfile; sourceTree = "<group>"; };
+		F31CA874192ECC1600B4C9C3 /* PhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
+		F31CA875192ECC1600B4C9C3 /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
+		F31CA877192ED0C300B4C9C3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F31CA878192ED0C300B4C9C3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		F34ACF80192DACF60023E98C /* Purrecious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Purrecious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34ACF83192DACF60023E98C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F34ACF85192DACF60023E98C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +74,7 @@
 				F34ACF86192DACF60023E98C /* CoreGraphics.framework in Frameworks */,
 				F34ACF88192DACF60023E98C /* UIKit.framework in Frameworks */,
 				F34ACF84192DACF60023E98C /* Foundation.framework in Frameworks */,
+				7F283AD09D384374BD33DA72 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +94,12 @@
 		F34ACF77192DACF60023E98C = {
 			isa = PBXGroup;
 			children = (
+				F31CA873192EB38100B4C9C3 /* Podfile */,
 				F34ACF89192DACF60023E98C /* Purrecious */,
 				F34ACFA2192DACF70023E98C /* PurreciousTests */,
 				F34ACF82192DACF60023E98C /* Frameworks */,
 				F34ACF81192DACF60023E98C /* Products */,
+				C19E9B512B09453081CD28B6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +119,7 @@
 				F34ACF85192DACF60023E98C /* CoreGraphics.framework */,
 				F34ACF87192DACF60023E98C /* UIKit.framework */,
 				F34ACF9C192DACF70023E98C /* XCTest.framework */,
+				48672C0DF09843E0BC986960 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +135,10 @@
 				F34ACF8A192DACF60023E98C /* Supporting Files */,
 				F34ACFB5192DB6930023E98C /* PhotoCell.h */,
 				F34ACFB6192DB6930023E98C /* PhotoCell.m */,
+				F31CA874192ECC1600B4C9C3 /* PhotoController.h */,
+				F31CA875192ECC1600B4C9C3 /* PhotoController.m */,
+				F31CA877192ED0C300B4C9C3 /* DetailViewController.h */,
+				F31CA878192ED0C300B4C9C3 /* DetailViewController.m */,
 			);
 			path = Purrecious;
 			sourceTree = "<group>";
@@ -161,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F34ACFAC192DACF70023E98C /* Build configuration list for PBXNativeTarget "Purrecious" */;
 			buildPhases = (
+				D914D693E1A54167951F60B9 /* Check Pods Manifest.lock */,
 				F34ACF7C192DACF60023E98C /* Sources */,
 				F34ACF7D192DACF60023E98C /* Frameworks */,
 				F34ACF7E192DACF60023E98C /* Resources */,
+				F053022B589246B69B0CA788 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +264,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D914D693E1A54167951F60B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F053022B589246B69B0CA788 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Purrecious/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F34ACF7C192DACF60023E98C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -253,6 +306,8 @@
 				F34ACF94192DACF70023E98C /* AppDelegate.m in Sources */,
 				F34ACFB4192DAD470023E98C /* PhotosViewController.m in Sources */,
 				F34ACF90192DACF70023E98C /* main.m in Sources */,
+				F31CA876192ECC1600B4C9C3 /* PhotoController.m in Sources */,
+				F31CA879192ED0C300B4C9C3 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +421,7 @@
 		};
 		F34ACFAD192DACF70023E98C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C19E9B512B09453081CD28B6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -379,6 +435,7 @@
 		};
 		F34ACFAE192DACF70023E98C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C19E9B512B09453081CD28B6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -449,6 +506,7 @@
 				F34ACFAE192DACF70023E98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F34ACFAF192DACF70023E98C /* Build configuration list for PBXNativeTarget "PurreciousTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +515,7 @@
 				F34ACFB1192DACF70023E98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

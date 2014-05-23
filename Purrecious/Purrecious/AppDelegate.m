@@ -9,10 +9,19 @@
 #import "AppDelegate.h"
 #import "PhotosViewController.h"
 
+#import <SimpleAuth/SimpleAuth.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    SimpleAuth.configuration[@"instagram"] = @{
+                        @"client_id" : @"a08fbeb4bdc44fdfb0b1c228fb8dad08",
+                        SimpleAuthRedirectURIKey : @"purrecious://auth/instagram"
+                    };
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
