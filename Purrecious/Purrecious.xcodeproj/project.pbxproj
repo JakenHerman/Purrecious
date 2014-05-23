@@ -10,6 +10,8 @@
 		7F283AD09D384374BD33DA72 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48672C0DF09843E0BC986960 /* libPods.a */; };
 		F31CA876192ECC1600B4C9C3 /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F31CA875192ECC1600B4C9C3 /* PhotoController.m */; };
 		F31CA879192ED0C300B4C9C3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F31CA878192ED0C300B4C9C3 /* DetailViewController.m */; };
+		F31CA87C192EDAD400B4C9C3 /* PresentDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F31CA87B192EDAD400B4C9C3 /* PresentDetailTransition.m */; };
+		F31CA87F192EDE5900B4C9C3 /* DismissDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F31CA87E192EDE5900B4C9C3 /* DismissDetailTransition.m */; };
 		F34ACF84192DACF60023E98C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34ACF83192DACF60023E98C /* Foundation.framework */; };
 		F34ACF86192DACF60023E98C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34ACF85192DACF60023E98C /* CoreGraphics.framework */; };
 		F34ACF88192DACF60023E98C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34ACF87192DACF60023E98C /* UIKit.framework */; };
@@ -44,6 +46,10 @@
 		F31CA875192ECC1600B4C9C3 /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
 		F31CA877192ED0C300B4C9C3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		F31CA878192ED0C300B4C9C3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F31CA87A192EDAD400B4C9C3 /* PresentDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentDetailTransition.h; sourceTree = "<group>"; };
+		F31CA87B192EDAD400B4C9C3 /* PresentDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentDetailTransition.m; sourceTree = "<group>"; };
+		F31CA87D192EDE5900B4C9C3 /* DismissDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissDetailTransition.h; sourceTree = "<group>"; };
+		F31CA87E192EDE5900B4C9C3 /* DismissDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissDetailTransition.m; sourceTree = "<group>"; };
 		F34ACF80192DACF60023E98C /* Purrecious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Purrecious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34ACF83192DACF60023E98C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F34ACF85192DACF60023E98C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +145,10 @@
 				F31CA875192ECC1600B4C9C3 /* PhotoController.m */,
 				F31CA877192ED0C300B4C9C3 /* DetailViewController.h */,
 				F31CA878192ED0C300B4C9C3 /* DetailViewController.m */,
+				F31CA87A192EDAD400B4C9C3 /* PresentDetailTransition.h */,
+				F31CA87B192EDAD400B4C9C3 /* PresentDetailTransition.m */,
+				F31CA87D192EDE5900B4C9C3 /* DismissDetailTransition.h */,
+				F31CA87E192EDE5900B4C9C3 /* DismissDetailTransition.m */,
 			);
 			path = Purrecious;
 			sourceTree = "<group>";
@@ -306,7 +316,9 @@
 				F34ACF94192DACF70023E98C /* AppDelegate.m in Sources */,
 				F34ACFB4192DAD470023E98C /* PhotosViewController.m in Sources */,
 				F34ACF90192DACF70023E98C /* main.m in Sources */,
+				F31CA87C192EDAD400B4C9C3 /* PresentDetailTransition.m in Sources */,
 				F31CA876192ECC1600B4C9C3 /* PhotoController.m in Sources */,
+				F31CA87F192EDE5900B4C9C3 /* DismissDetailTransition.m in Sources */,
 				F31CA879192ED0C300B4C9C3 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
