@@ -21,8 +21,6 @@
     layout.minimumInteritemSpacing = 1.0;
     layout.minimumLineSpacing = 1.0;
     
-    //BAE4F0
-    
     return (self = [super initWithCollectionViewLayout:layout]);
 }
 
